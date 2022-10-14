@@ -1,1 +1,1 @@
-readme
+Learning C programming.
