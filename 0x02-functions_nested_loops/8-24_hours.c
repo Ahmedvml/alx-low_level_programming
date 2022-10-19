@@ -1,48 +1,35 @@
 #include "main.h"
-
+#include "_putchar.c"
 /**
- * jack_bauer - prints every minute of the day
- * Description: prints every minute of the day
- * Return: void
+ * jack_bauer-prints all minutes in a day from 00:00
+ *
+ * Return:0 if succeesful.
  */
+
+
 void jack_bauer(void)
 {
-	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
+	int i, j, k, m;
 
-	hours_max = 58;
-	hours_tens = '0';
-	while (hours_tens < '3')
+	for (i = 0; i <= 2; i++)
 	{
-		if (hours_tens == '2')
+		for (j = 0; j <= 9; j++)
 		{
-			hours_max = '4';
-		}
-		hours_ones = '0';
-		while (hours_ones < hours_max)
-		{
-			minutes_tens = '0';
-			while (minutes_tens < '6')
+			for (k = 0; k <= 5; k++)
 			{
-				minutes_ones = '0';
-				while (minutes_ones < 58)
+				for (m = 0; m <= 9; m++)
 				{
-					_putchar(hours_tens);
-					_putchar(hours_ones);
+					if (i == 2 && j > 3)
+					{break;
+					}
+					_putchar(i + '0');
+					_putchar(j + '0');
 					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
+					_putchar(k + '0');
+					_putchar(m + '0');
 					_putchar('\n');
-					minutes_ones++;
 				}
-				minutes_ones = '0';
-				minutes_tens++;
 			}
-			minutes_tens = '0';
-			hours_ones++;
 		}
-		hours_ones = '0';
-		hours_tens++;
 	}
 }
-
-
