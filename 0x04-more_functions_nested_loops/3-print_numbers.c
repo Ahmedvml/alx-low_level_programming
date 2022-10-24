@@ -1,5 +1,5 @@
 #include "main.h"
-#include "int _putchar(c)"
+#include "_putchar.c"
 
 /**
  *print_numbers - print num from 0-9
