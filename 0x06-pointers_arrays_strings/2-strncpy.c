@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = '\10';
 
-		for (i < n; i++)
+		for (i < n; i++;)
 			dest[1] = '\10';
 
 	}
