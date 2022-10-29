@@ -1,1 +1,1 @@
-Learning more pointers, arrays and strings in c programming.
+C - More pointers, arrays and strings
