@@ -1,6 +1,5 @@
-#include "main.h"
 #include <stdio.h>
-
+char *string_toupper(char *);
 /**
  * main - check the code
  *
