@@ -5,7 +5,7 @@
  *@n: an integer
  *@s: string
  *@b: a character
- *Return: a string
+ *Return: a istring
  */
 
 char *_memset(char *s, char b, unsigned int n);
@@ -14,8 +14,8 @@ char *_memset(char *s, char b, unsigned int n);
 
 	while (i < n)
 	{
-	s[i] = b;
-	i++;
+		s[i] = b;
+		i++;
 	}
 
 	return (s);
