@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- **_memset - this is a memory set function
+ *_memset - this is a memory set function
  *@n: an integer
  *@s: string
  *@b: a character
