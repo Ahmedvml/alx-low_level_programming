@@ -3,28 +3,28 @@
 /**
  * _strspn - a function that get the length of a prefix substring
  *
- *@s: initial segment of
- *@accpt: consists only of bytes from
- *Return: the number of bytes
+ * @s: initial segment of
+ * @accpt: consists only of bytes from
+ * Return: the number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int x = 0, i, j;
+	unsigned int i, j, bool;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (s[i] != 32)
+		bool = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			for (j = 0; accept[j] != '\0'; j++)
+			if (*(s + i) == *(accept + j))
 			{
-				if (s[i] == accept[j])
-					x++;
+				bool = 0;
+				break;
 			}
 		}
-		else
-			return (x);
+		if (bool == 1)
+			break;
 	}
-		return (x);
-
+	return (i);
 }
